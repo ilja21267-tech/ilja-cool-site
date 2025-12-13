@@ -1,0 +1,67 @@
+h1 {
+	color:blue;
+}
+li.PS {
+	color: red;
+}
+body{
+ 
+}
+li.start {
+	color: blue;
+}
+li.getriebe {
+	color: white;
+}
+li.Drehmoment {
+	color: red;
+}
+li.max  {
+	color: blue;
+}
+h1{ 
+text-align:center;
+}
+body {
+ 
+}
+h1 {
+	font-style:italic;
+}
+div.lol{
+	font-size:20px;
+}
+div.bild{
+	font-size:40px:
+}
+div.sup{
+	font-size:40px;
+	text-align:center;
+}
+ 
+body{
+	background-image: url("https://cdn.bimmertoday.de/wp-content/uploads/2023/03/BMW-M3-Touring-G81-Frozen-Black-Drift.jpg");
+}
+p{
+	color:white;
+	text-align:center;
+	font-size:30px;
+}
+h1.bmww{
+	color:white;
+	text-align:center;
+	font-size:50px;
+	font-style:italic;
+}
+h2{
+	color:white;
+	text-align:center;
+	font-size:35px;
+	font-style:italic;
+}
+a{
+	font-size:30px;
+	font-style:italic;
+	text-align:center;
+	color:red;
+}
