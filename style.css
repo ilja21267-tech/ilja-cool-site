@@ -1,7 +1,7 @@
 * {
   margin: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family: Roboto, Arial, sans-serif;
 }
 
 body {
@@ -11,37 +11,45 @@ body {
 
 /* HEADER */
 .header {
+  height: 56px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 10px 16px;
+  justify-content: space-between;
+  padding: 0 16px;
   background: #121212;
   position: sticky;
   top: 0;
+  z-index: 10;
 }
 
-.left, .center, .right {
+.header-left, .header-center, .header-right {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 16px;
+}
+
+.menu {
+  font-size: 22px;
+  cursor: pointer;
 }
 
 .logo {
   font-size: 20px;
   font-weight: bold;
-  color: red;
+  color: #ff0000;
 }
 
-.center input {
-  width: 400px;
-  padding: 6px 10px;
+.header-center input {
+  width: 420px;
+  padding: 7px 10px;
   background: #000;
   border: 1px solid #303030;
   color: white;
+  border-radius: 2px 0 0 2px;
 }
 
-.center button {
-  padding: 6px 12px;
+.header-center button {
+  padding: 7px 14px;
   background: #222;
   border: 1px solid #303030;
   cursor: pointer;
@@ -49,62 +57,73 @@ body {
 
 .avatar {
   background: #3ea6ff;
-  padding: 6px 10px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-weight: bold;
 }
 
-/* LAYOUT */
-.container {
+/* BODY */
+.body {
   display: flex;
 }
 
+/* SIDEBAR */
 .sidebar {
-  width: 220px;
+  width: 240px;
   padding: 12px;
-  background: #0f0f0f;
 }
 
-.sidebar a {
-  display: block;
-  padding: 10px;
-  border-radius: 8px;
+.sidebar .item {
+  padding: 10px 12px;
+  border-radius: 10px;
   cursor: pointer;
 }
 
-.sidebar a.active,
-.sidebar a:hover {
+.sidebar .item:hover,
+.sidebar .active {
   background: #272727;
 }
 
-/* VIDEOS */
-.videos {
+.sidebar hr {
+  border: none;
+  height: 1px;
+  background: #303030;
+  margin: 12px 0;
+}
+
+/* CONTENT */
+.content {
   flex: 1;
-  padding: 20px;
+  padding: 24px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 16px;
 }
 
+/* VIDEO CARD */
 .card {
   cursor: pointer;
 }
 
-.thumb {
+.thumbnail {
   width: 100%;
   border-radius: 12px;
 }
 
 .info {
   display: flex;
-  gap: 10px;
-  margin-top: 8px;
+  gap: 12px;
+  margin-top: 10px;
 }
 
 .channel {
   width: 36px;
   height: 36px;
-  border-radius: 50%;
   background: #444;
+  border-radius: 50%;
 }
 
 .text h4 {
@@ -116,4 +135,5 @@ body {
   font-size: 12px;
   color: #aaa;
 }
+
 
