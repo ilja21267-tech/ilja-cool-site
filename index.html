@@ -10,38 +10,35 @@
 <header class="header">
   <div class="logo">MY•SPACE</div>
   <nav>
-    <a href="#about">Обо мне</a>
-    <a href="#projects">Проекты</a>
-    <a href="#contact">Контакт</a>
+    <button onclick="goTo('about')">Обо мне</button>
+    <button onclick="goTo('projects')">Проекты</button>
+    <button onclick="goTo('contact')">Контакт</button>
   </nav>
 </header>
 
 <section class="hero">
-  <h1>Создаю сайты и идеи</h1>
-  <p>Минимализм. Скорость. Стиль.</p>
-  <button onclick="scrollToSection()">Смотреть дальше</button>
+  <h1 id="title">Создаю стильные сайты</h1>
+  <p>Нажми кнопку — она работает 🙂</p>
+  <button class="main-btn" onclick="changeText()">Нажми меня</button>
 </section>
 
-<section class="about" id="about">
-  <h2>Кто я</h2>
-  <p>
-    Я изучаю веб-разработку и создаю современные сайты.
-    Люблю чистый дизайн, анимации и эффект «вау».
-  </p>
+<section id="about" class="section">
+  <h2>Обо мне</h2>
+  <p>Я учусь делать современные сайты с рабочими кнопками и эффектами.</p>
 </section>
 
-<section class="projects" id="projects">
-  <h2>Мои проекты</h2>
+<section id="projects" class="section">
+  <h2>Проекты</h2>
   <div class="cards">
-    <div class="card">🌐 Website UI</div>
-    <div class="card">⚙ JavaScript App</div>
-    <div class="card">🎨 Design Concept</div>
+    <div class="card" onclick="showProject(1)">Проект 1</div>
+    <div class="card" onclick="showProject(2)">Проект 2</div>
+    <div class="card" onclick="showProject(3)">Проект 3</div>
   </div>
 </section>
 
-<section class="contact" id="contact">
-  <h2>Связь</h2>
-  <button onclick="sayHello()">Написать</button>
+<section id="contact" class="section">
+  <h2>Контакт</h2>
+  <button class="contact-btn" onclick="sayHi()">Написать</button>
 </section>
 
 <footer>
@@ -52,7 +49,7 @@
 </body>
 </html>
 
- 
+
 
 
 
