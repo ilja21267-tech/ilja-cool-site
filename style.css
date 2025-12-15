@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -5,7 +6,7 @@
 }
 
 body {
-  background: linear-gradient(135deg, #0b0b0f, #1a1a2e);
+  background: #0b0b0f;
   color: white;
   scroll-behavior: smooth;
 }
@@ -32,11 +33,15 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+nav {
+  display: flex;
+  gap: 20px;
+}
+
 nav button {
   background: none;
   border: none;
   color: #aaa;
-  margin-left: 20px;
   cursor: pointer;
   font-size: 16px;
   transition: color 0.3s;
@@ -46,15 +51,35 @@ nav button:hover {
   color: white;
 }
 
+.burger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
 /* HERO */
 .hero {
   height: 100vh;
+  position: relative;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
   text-align: center;
-  padding: 0 20px;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, #0b0b0f, #1a1a2e, #0b0b0f);
+  background-size: 400% 400%;
+  animation: gradientMove 20s ease infinite;
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
 }
 
 .hero h1 {
@@ -67,7 +92,7 @@ nav button:hover {
 
 .hero p {
   margin-top: 20px;
-  color: #aaa;
+  color: #ccc;
   font-size: 18px;
   animation: fadeIn 2.5s ease forwards;
 }
@@ -86,20 +111,16 @@ nav button:hover {
 
 .main-btn:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(255,59,59,0.4);
+  box-shadow: 0 10px 25px rgba(79,140,255,0.4);
 }
 
 /* SECTIONS */
 .section {
   padding: 120px 40px;
   text-align: center;
-}
-
-.about p {
-  max-width: 600px;
-  margin: 20px auto 0;
-  color: #ccc;
-  font-size: 16px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s, transform 1s;
 }
 
 /* PROJECT CARDS */
@@ -121,7 +142,6 @@ nav button:hover {
   align-items: center;
   cursor: pointer;
   font-size: 18px;
-  color: #fff;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -156,8 +176,49 @@ footer {
   background: rgba(0,0,0,0.5);
 }
 
-/* ANIMATION */
+/* ANIMATIONS */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px);}
   to { opacity: 1; transform: translateY(0);}
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background: rgba(0,0,0,0.9);
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .main-btn, .contact-btn {
+    width: 80%;
+  }
 }
