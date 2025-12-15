@@ -2,33 +2,58 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Реклама магазина</title>
+  <title>My Space</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="ad">
-  <div class="ad-text">
-    <span class="label">🔥 АКЦИЯ</span>
-    <h1>Скидки до 50%</h1>
-    <p>
-      Лучшие товары по самым выгодным ценам.  
-      Успей купить, пока акция не закончилась!
-    </p>
-    <button onclick="goShop()">Перейти в магазин</button>
-  </div>
+<header class="header">
+  <div class="logo">MY•SPACE</div>
+  <nav>
+    <a href="#about">Обо мне</a>
+    <a href="#projects">Проекты</a>
+    <a href="#contact">Контакт</a>
+  </nav>
+</header>
 
-  <div class="ad-image">
-    <img src="https://picsum.photos/500/400?shop" alt="Товар">
+<section class="hero">
+  <h1>Создаю сайты и идеи</h1>
+  <p>Минимализм. Скорость. Стиль.</p>
+  <button onclick="scrollToSection()">Смотреть дальше</button>
+</section>
+
+<section class="about" id="about">
+  <h2>Кто я</h2>
+  <p>
+    Я изучаю веб-разработку и создаю современные сайты.
+    Люблю чистый дизайн, анимации и эффект «вау».
+  </p>
+</section>
+
+<section class="projects" id="projects">
+  <h2>Мои проекты</h2>
+  <div class="cards">
+    <div class="card">🌐 Website UI</div>
+    <div class="card">⚙ JavaScript App</div>
+    <div class="card">🎨 Design Concept</div>
   </div>
-</div>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Связь</h2>
+  <button onclick="sayHello()">Написать</button>
+</section>
+
+<footer>
+  © 2025 My Space
+</footer>
 
 <script src="script.js"></script>
 </body>
 </html>
 
-
  
+
 
 
 
