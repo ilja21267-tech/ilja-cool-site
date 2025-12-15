@@ -1,5 +1,10 @@
-function goShop() {
-  alert("Переход в магазин 🚀");
-  // сюда можно вставить ссылку:
-  // window.location.href = "https://твой-магазин.de";
+function scrollToSection() {
+  document.getElementById("about").scrollIntoView({
+    behavior: "smooth"
+  });
 }
+
+function sayHello() {
+  alert("Привет! 👋 Спасибо, что зашёл на сайт.");
+}
+
