@@ -1,67 +1,85 @@
-h1 {
-	color:blue;
-}
-li.PS {
-	color: red;
-}
-body{
- 
-}
-li.start {
-	color: blue;
-}
-li.getriebe {
-	color: white;
-}
-li.Drehmoment {
-	color: red;
-}
-li.max  {
-	color: blue;
-}
-h1{ 
-text-align:center;
-}
 body {
- 
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f0f0f;
+  color: white;
 }
-h1 {
-	font-style:italic;
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;
+  background: #121212;
 }
-div.lol{
-	font-size:20px;
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: red;
 }
-div.bild{
-	font-size:40px:
+
+.search {
+  margin-left: auto;
+  display: flex;
 }
-div.sup{
-	font-size:40px;
-	text-align:center;
+
+.search input {
+  padding: 6px 10px;
+  border-radius: 20px 0 0 20px;
+  border: none;
+  outline: none;
 }
- 
-body{
-	background-image: url("https://cdn.bimmertoday.de/wp-content/uploads/2023/03/BMW-M3-Touring-G81-Frozen-Black-Drift.jpg");
+
+.search button {
+  padding: 6px 12px;
+  border-radius: 0 20px 20px 0;
+  border: none;
+  cursor: pointer;
 }
-p{
-	color:white;
-	text-align:center;
-	font-size:30px;
+
+.videos {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
 }
-h1.bmww{
-	color:white;
-	text-align:center;
-	font-size:50px;
-	font-style:italic;
+
+.card {
+  background: #181818;
+  border-radius: 12px;
+  cursor: pointer;
+  overflow: hidden;
 }
-h2{
-	color:white;
-	text-align:center;
-	font-size:35px;
-	font-style:italic;
+
+.card img {
+  width: 100%;
 }
-a{
-	font-size:30px;
-	font-style:italic;
-	text-align:center;
-	color:red;
+
+.card .info {
+  padding: 10px;
 }
+
+.player {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.8);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.player-box {
+  background: black;
+  width: 80%;
+  max-width: 800px;
+}
+
+.close {
+  width: 100%;
+  padding: 10px;
+  background: red;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
