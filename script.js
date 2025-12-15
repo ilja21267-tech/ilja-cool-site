@@ -32,3 +32,20 @@ window.addEventListener('scroll', () => {
     }
   });
 });
+const form = document.getElementById('contactForm');
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault(); // чтобы форма не перезагружала страницу
+
+  const name = document.getElementById('name').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const message = document.getElementById('message').value.trim();
+
+  if(name && email && message){
+    alert(`Спасибо, ${name}!\nВаше сообщение получено:\n${message}`);
+    form.reset(); // очищаем поля
+  } else {
+    alert("Пожалуйста, заполните все поля!");
+  }
+});
+
