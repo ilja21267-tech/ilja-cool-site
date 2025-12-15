@@ -1,71 +1,126 @@
 * {
+  margin: 0;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
 
 body {
-  background: #f2f2f2;
+  background: #0b0b0f;
+  color: white;
+}
+
+/* HEADER */
+.header {
   display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  position: fixed;
+  width: 100%;
+  background: rgba(11,11,15,0.8);
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #aaa;
+}
+
+nav a:hover {
+  color: white;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  text-align: center;
 }
 
-.ad {
-  width: 900px;
-  background: white;
-  display: flex;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+.hero h1 {
+  font-size: 56px;
 }
 
-.ad-text {
-  padding: 40px;
-  flex: 1;
+.hero p {
+  margin: 20px 0;
+  color: #aaa;
 }
 
-.label {
-  background: #ff3b3b;
-  color: white;
-  padding: 6px 12px;
-  border-radius: 20px;
-  font-size: 12px;
-}
-
-.ad-text h1 {
-  margin: 20px 0 10px;
-  font-size: 36px;
-}
-
-.ad-text p {
-  font-size: 16px;
-  color: #555;
-}
-
-.ad-text button {
-  margin-top: 20px;
-  padding: 14px 26px;
-  font-size: 16px;
-  background: #000;
-  color: white;
+.hero button {
+  padding: 14px 28px;
   border: none;
-  border-radius: 30px;
+  background: white;
+  color: black;
+  font-size: 16px;
   cursor: pointer;
+  border-radius: 30px;
+}
+
+.hero button:hover {
+  background: #4f8cff;
+  color: white;
+}
+
+/* SECTIONS */
+section {
+  padding: 120px 40px;
+  text-align: center;
+}
+
+.about p {
+  max-width: 600px;
+  margin: auto;
+  color: #aaa;
+}
+
+.projects .cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.card {
+  width: 220px;
+  height: 140px;
+  background: #15151d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  font-size: 18px;
   transition: 0.3s;
 }
 
-.ad-text button:hover {
-  background: #ff3b3b;
+.card:hover {
+  transform: translateY(-10px);
+  background: #1f1f2a;
 }
 
-.ad-image {
-  flex: 1;
+/* CONTACT */
+.contact button {
+  padding: 14px 30px;
+  background: #4f8cff;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
 }
 
-.ad-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #666;
 }
+
 
