@@ -3,27 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>YouTube Demo</title>
+  <title>YouTube Clone</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="header">
-  <div class="logo">▶ YouTube</div>
+  <div class="left">
+    <span class="menu">☰</span>
+    <span class="logo">YouTube</span>
+  </div>
 
-  <div class="search">
-    <input type="text" id="searchInput" placeholder="Поиск">
-    <button onclick="search()">🔍</button>
+  <div class="center">
+    <input type="text" placeholder="Поиск">
+    <button>🔍</button>
+  </div>
+
+  <div class="right">
+    <span>➕</span>
+    <span>🔔</span>
+    <span class="avatar">I</span>
   </div>
 </header>
 
-<main class="videos" id="videos"></main>
+<div class="container">
+  <aside class="sidebar">
+    <a class="active">🏠 Главная</a>
+    <a>🎬 Shorts</a>
+    <a>📺 Подписки</a>
+    <a>📚 Библиотека</a>
+  </aside>
 
-<div class="player" id="player">
-  <div class="player-box">
-    <video id="video" controls></video>
-    <button class="close" onclick="closePlayer()">✖</button>
-  </div>
+  <main class="videos" id="videos"></main>
 </div>
 
 <script src="script.js"></script>
@@ -32,4 +43,5 @@
 
 
  
+
 
