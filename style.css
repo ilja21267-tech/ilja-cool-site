@@ -36,7 +36,6 @@ body {
 nav {
   display: flex;
   gap: 20px;
-  color:blue;
 }
 
 nav button {
@@ -249,5 +248,6 @@ input:focus, textarea:focus {
   background: #1a1a2e;
   color: white;
 }
+
 
 
