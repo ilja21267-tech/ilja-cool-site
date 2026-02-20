@@ -1,67 +1,162 @@
-h1 {
-	color:blue;
+/* Общие стили */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
-li.PS {
-	color: red;
-}
-body{
- 
-}
-li.start {
-	color: blue;
-}
-li.getriebe {
-	color: white;
-}
-li.Drehmoment {
-	color: red;
-}
-li.max  {
-	color: blue;
-}
-h1{ 
-text-align:center;
-}
+
 body {
- 
+    line-height: 1.6;
+    color: #333;
 }
-h1 {
-	font-style:italic;
+
+/* Контейнер */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
-div.lol{
-	font-size:20px;
+
+/* Шапка */
+.site-header {
+    background: #fff;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
-div.bild{
-	font-size:40px:
+
+.site-header .logo img {
+    height: 50px;
 }
-div.sup{
-	font-size:40px;
-	text-align:center;
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
 }
- 
-body{
-	background-image: url("https://cdn.bimmertoday.de/wp-content/uploads/2023/03/BMW-M3-Touring-G81-Frozen-Black-Drift.jpg");
+
+.main-nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
 }
-p{
-	color:white;
-	text-align:center;
-	font-size:30px;
+
+.main-nav a:hover {
+    color: #007BFF;
 }
-h1.bmww{
-	color:white;
-	text-align:center;
-	font-size:50px;
-	font-style:italic;
+
+/* Hero */
+.hero {
+    background: #f5f5f5;
+    text-align: center;
+    padding: 100px 0;
 }
-h2{
-	color:white;
-	text-align:center;
-	font-size:35px;
-	font-style:italic;
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
 }
-a{
-	font-size:30px;
-	font-style:italic;
-	text-align:center;
-	color:red;
+
+.btn-primary {
+    display: inline-block;
+    padding: 10px 25px;
+    background: #007BFF;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn-primary:hover {
+    background: #0056b3;
+}
+
+/* Продукт */
+.product {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.product-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product-item {
+    background: #fff;
+    padding: 20px;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.btn-secondary {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 20px;
+    background: #6c757d;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn-secondary:hover {
+    background: #5a6268;
+}
+
+/* Контакты */
+.contact {
+    background: #f5f5f5;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact input, .contact textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.contact button {
+    padding: 10px;
+    border: none;
+    background: #007BFF;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background: #0056b3;
+}
+
+/* Футер */
+.site-footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Адаптивность */
+@media(max-width: 768px) {
+    .product-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
