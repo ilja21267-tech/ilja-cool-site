@@ -1,67 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="style.css">
-<title> BMW </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой Продукт</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
- 
+    <!-- Шапка сайта -->
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <img src="logo.svg" alt="Логотип" />
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#product">Продукт</a></li>
+                    <li><a href="#about">О компании</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<h1> BMW M3 Touring </h1>
-<div class="lol"> 
-<ul>
-<li class="PS"> 551 PS </li>
-<li class="start"> 0-100=3,5 sek</li>
-<li class="getriebe"> Getriebe: 8-Gang-Automatik </li>
-<li class="Drehmoment">  Drehmoment 650 Nm </li>
-<li class="max"> Höchstgeschwindigkeit 300 km/h </li>
-</ul>
-</div>
-<div class="bild">
-<a href="https://www.bmw.de/de/neufahrzeuge/m/bmw-3er-m-modelle/bmw-m3-touring.html?clc=1a1abm01gao1b01basaaf&gclsrc=aw.ds&&tl=sea-gl-DE_BMW_NC_M%20SERIES_DEU_BG_ALO_BMW%20V2023DE%20LO%20BR%20024_CONV_%20_SEAADW-mix-miy-.-sech-G81_BG_M3%20TOURING%20MODEL_MUL_NONE-.-e-bmw%20m3%20touring-.-.&gad_source=1&gad_campaignid=57370002&gclid=EAIaIQobChMI4MnAgumMkQMVI5GDBx2z7xySEAAYASAAEgIakPD_BwE#technische-daten%22 target="_blank"> BMW M3 Touring </a>
-</div>
-<div>
-<p> Der BMW M3 Touring (G81) ist ein Hochleistungs-Sportkombi,
-	der die Praktikabilität eines Kombis mit der Performance eines M3 vereint,
-	angetrieben von einem 6-Zylinder-Biturbo-Motor mit bis zu 510 PS (Competition-Version)
-	oder 550 PS (CS-Version), Allradantrieb (M xDrive), adaptivem Fahrwerk und einer
-	Beschleunigung von 0 auf 100 km/h in ca. 3,6 Sekunden. Er bietet Platz für fünf Personen, 
-	viel Kofferraumvolumen (ca. 500-1510 Liter), M Carbon-Schalensitze und ist für den Alltag
-	sowie die Rennstrecke konzipiert
-</p>
-</div>
-<h1 class="bmww"> Wichtige Merkmale
-Motor: M TwinPower Turbo Reihen-6-Zylinder.
-Leistung: Competition mit 530 PS (390 kW), CS mit 550 PS (405 kW).
-Antrieb: M xDrive Allradsystem mit aktivem M Differenzial.
-Beschleunigung: 0-100 km/h in ca. 3,6 Sekunden.
-Getriebe: 8-Gang M Steptronic Sport Getriebe.
-Fahrwerk: Adaptives M Fahrwerk, M Sportdifferenzial, Sportbremsen.
-Interieur: M Carbon Schalensitze, BMW Curved Display, M spezifische Anzeigen.
-Praktikabilität: Getrennt zu öffnende Heckscheibe, großer Kofferraum. 
-</h1>
-<div>
-<h2> Der BMW M3 Touring ist ein "Power-Kombi" oder "Über-Kombi", der die Lücke zwischen Familienauto und Rennsportwagen schließt und mit seinem kraftvollen Motor, Allradantrieb und vielseitigen Innenraum überzeugt. </h2>
- 
- 
-  <h1> ilja </h1>
+    <!-- Главная секция -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Добро пожаловать в мир нашего продукта</h1>
+            <p>Лучший выбор для вашего комфорта и удобства</p>
+            <a href="#product" class="btn-primary">Узнать больше</a>
+        </div>
+    </section>
 
-	<h1> SEMI KING </h1>
+    <!-- Секция продукта -->
+    <section id="product" class="product">
+        <div class="container">
+            <h2>Наш продукт</h2>
+            <div class="product-items">
+                <div class="product-item">
+                    <img src="product1.jpg" alt="Продукт 1">
+                    <h3>Продукт 1</h3>
+                    <p>Короткое описание продукта и его преимуществ.</p>
+                    <a href="#" class="btn-secondary">Подробнее</a>
+                </div>
+                <div class="product-item">
+                    <img src="product2.jpg" alt="Продукт 2">
+                    <h3>Продукт 2</h3>
+                    <p>Короткое описание продукта и его преимуществ.</p>
+                    <a href="#" class="btn-secondary">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Секция о компании -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>О компании</h2>
+            <p>Немного информации о бренде, миссии и ценностях.</p>
+        </div>
+    </section>
 
-	
-  </body>
+    <!-- Контакты -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Свяжитесь с нами</h2>
+            <form>
+                <input type="text" name="name" placeholder="Ваше имя" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="message" placeholder="Сообщение" required></textarea>
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Мой продукт. Все права защищены.</p>
+        </div>
+    </footer>
+
+</body>
 </html>
  
 
-
-
-
-
-
- 
 
 
 
