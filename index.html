@@ -9,10 +9,84 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>Настя и даша</h1>
-<p> Илья </p>
+    <!-- Шапка сайта -->
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <img src="logo.svg" alt="Логотип" />
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#product">Продукт</a></li>
+                    <li><a href="#about">О компании</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Главная секция -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Добро пожаловать в мир нашего продукта</h1>
+            <p>Лучший выбор для вашего комфорта и удобства</p>
+            <a href="#product" class="btn-primary">Узнать больше</a>
+        </div>
+    </section>
+
+    <!-- Секция продукта -->
+    <section id="product" class="product">
+        <div class="container">
+            <h2>Наш продукт</h2>
+            <div class="product-items">
+                <div class="product-item">
+                    <img src="product1.jpg" alt="Продукт 1">
+                    <h3>Продукт 1</h3>
+                    <p>Короткое описание продукта и его преимуществ.</p>
+                    <a href="#" class="btn-secondary">Подробнее</a>
+                </div>
+                <div class="product-item">
+                    <img src="product2.jpg" alt="Продукт 2">
+                    <h3>Продукт 2</h3>
+                    <p>Короткое описание продукта и его преимуществ.</p>
+                    <a href="#" class="btn-secondary">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция о компании -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>О компании</h2>
+            <p>Немного информации о бренде, миссии и ценностях.</p>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Свяжитесь с нами</h2>
+            <form>
+                <input type="text" name="name" placeholder="Ваше имя" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="message" placeholder="Сообщение" required></textarea>
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 Мой продукт. Все права защищены.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
+ 
  
 
 
